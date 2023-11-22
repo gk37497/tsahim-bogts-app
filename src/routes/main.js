@@ -2,9 +2,9 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 
+import ExperiencesScreen from '../sreens/Experiences';
 import ForecastScreen from '../sreens/Forecast';
 import HomeScreen from '../sreens/Home';
-import NewsScreen from '../sreens/NewsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,8 +19,8 @@ export default function BottomTabs() {
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarLabel: 'Нүүр',
-          title: 'Нүүр хуудас',
+          tabBarLabel: 'Мэдээ',
+          title: 'Мэдээ мэдээлэл',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home-outline" color={color} size={size} />
           ),
@@ -28,10 +28,10 @@ export default function BottomTabs() {
       />
       <Tab.Screen
         name="News"
-        component={NewsScreen}
+        component={ExperiencesScreen}
         options={{
-          tabBarLabel: 'Мэдээ',
-          title: 'Мэдээ мэдээлэл',
+          tabBarLabel: 'Туршлага',
+          title: 'Сайн малчдын туршлага',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="newspaper" color={color} size={size} />
           ),

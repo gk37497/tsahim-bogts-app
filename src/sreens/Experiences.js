@@ -3,11 +3,11 @@ import { WebView } from 'react-native-webview';
 
 import { CONSTANTS } from '../utils/constants';
 
-export default function HomeScreen() {
+export default function ExperiencesScreen() {
   return (
     <WebView
       style={styles.container}
-      source={{ uri: `${CONSTANTS.WEB_URL}` }}
+      source={{ uri: `${CONSTANTS.WEB_URL}/experiences` }}
       setDisplayZoomControls={false}
       setBuiltInZoomControls={false}
       allowsBackForwardNavigationGestures
