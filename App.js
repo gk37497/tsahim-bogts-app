@@ -1,11 +1,18 @@
-import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 
-import BottomTabs from './src/routes/main';
+import { NavigationContainer } from '@react-navigation/native';
+import Constants from 'expo-constants';
+import { StatusBar, View } from 'react-native';
+
+import { MyStack } from './src/routes/route';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <BottomTabs />
-    </NavigationContainer>
+    <View style={{ flex: 1, marginTop: Constants.statusBarHeight }}>
+      <NavigationContainer>
+        <StatusBar barStyle="dark-content" />
+        <MyStack />
+      </NavigationContainer>
+    </View>
   );
 }
