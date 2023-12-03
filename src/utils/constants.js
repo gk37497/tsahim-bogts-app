@@ -1,3 +1,3 @@
 export const CONSTANTS = {
-  WEB_URL: 'https://tsahim-bogts.vercel.app/mobile',
+  WEB_URL: 'https://www.tsakhimbogts.mn/mobile',
 };
